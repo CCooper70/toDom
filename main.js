@@ -28,10 +28,10 @@ function removeItem(item){
 // A function that takes in a todo object and displays it on the DOM. This is a pretty big function, so we'll walk through the different parts of it.
 const printTodo = function(todo) {
   // Use `document.createElement` to make an <li>.
-
+  let newElement = document.createElement('li')
   
   // Set its text (preferably using `.innerText`) to be our given object's text field. Check out what a todo object looks like in `todos.js` if you need to!
-
+  newElement.innerText = todo.text
 
   // Give our new li a `todo-item` class using `classList`. This will allow us to style it later if we want.
 
